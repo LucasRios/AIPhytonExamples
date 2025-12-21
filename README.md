@@ -1,17 +1,40 @@
 # AI Python Examples 🤖🐍
 
-Este repositório contém uma coleção de exemplos práticos de Inteligência Artificial e Processamento de Imagens utilizando Python. O objetivo é demonstrar desde conceitos básicos de manipulação de dados até o treinamento de redes neurais profundas.
+This repository contains a collection of practical examples in Artificial Intelligence and Image Processing using Python. The goal is to demonstrate everything from basic data manipulation to training deep neural networks.
 
-## 🚀 Projetos no Repositório
+---
 
-### 1. Classificador de Gatos e Cachorros (Transfer Learning)
-Um modelo de Deep Learning que utiliza a arquitetura **VGG16** (Transfer Learning) para classificar imagens de animais.
-- **Tecnologias:** TensorFlow, Keras, NumPy.
-- **Destaques:** - Tratamento de imagens corrompidas durante o carregamento.
-    - Otimização de memória RAM usando `float16` e limpeza de cache (`gc.collect`).
-    - Interface de predição com probabilidades legíveis.
+## 🚀 Projects in this Repository
 
-### 2. Transformação de Imagem: Colorida para Binário (Preto e Branco)
-Um script focado em processamento digital de imagens (PDI) para converter fotos coloridas em imagens binárias.
-- **Tecnologias:** OpenCV / PIL, Matplotlib.
-- **Conceitos:** Escala de cinza, limiarização (thresholding) e matrizes de pixels.
+### 1. Cat vs. Dog Classifier (Transfer Learning)
+A Deep Learning model that leverages the **VGG16** architecture (Transfer Learning) to classify animal images.
+- **Technologies:** TensorFlow, Keras, NumPy.
+- **Highlights:** - Handling corrupted images during the loading process.
+    - RAM optimization using `float16` and manual cache clearing (`gc.collect`).
+    - Prediction interface with human-readable probability outputs.
+
+### 2. Image Transformation: Color to Binary (Black & White)
+A script focused on Digital Image Processing (DIP) to convert color photos into grayscale and binary (black and white) images without relying solely on built-in high-level functions.
+- **Technologies:** OpenCV, PIL (Pillow), Matplotlib, NumPy.
+- **Concepts:** Grayscale conversion (Luminosity Method), Thresholding (binarization), and pixel matrix manipulation.
+
+---
+
+## 🛠️ Install dependencies
+ 
+   ```bash
+   pip install tensorflow numpy matplotlib pillow opencv-python requests
+   ```
+---
+
+## 🧠 Core Concepts Applied
+
+  Data Normalization: Scaling pixel values to the [0, 1] range for faster neural network convergence.
+  One-Hot Encoding: Converting categorical labels into numerical vectors for multi-class classification.
+  Memory Management: Strategies to handle large datasets (like Kaggle Cats and Dogs) in RAM-limited environments (Google Colab Free).
+  Thresholding: Segmenting images by intensity levels to isolate foreground objects from the background.
+  Luminosity Formula: Implementing Y=0.299R+0.587G+0.114B for accurate grayscale conversion.
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
